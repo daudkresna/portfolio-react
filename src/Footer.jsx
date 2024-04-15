@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
       <div className="my-16 text-center">
         <p className="text-slate-200">
-          Copyright &copy;2024 | Made with ❤️ by
+          Copyright &copy;2024 | Made with ❤️ by&nbsp;
           <span className="text-sky-600 font-semibold underline decoration-indigo-500 decoration-2">
             Kresna
           </span>

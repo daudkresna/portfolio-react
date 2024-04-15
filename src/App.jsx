@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";
+import Skills from "./Skills";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Hero />
       <AboutMe />
+      <Skills />
       <Portfolio />
       <Footer />
     </>

@@ -7,13 +7,13 @@ const Hero = () => {
       <div className="flex flex-wrap min-h-screen md:flex-row-reverse">
         <div className="w-full self-center md:w-1/2">
           <img
-            className="max-w-full mx-auto shadow-lg shadow-sky-600 rounded-full h-[250px] w-[250px] object-cover object-top md:h-[300px] md:w-[300px]"
+            className="mb-20 max-w-full mx-auto shadow-lg shadow-sky-600 rounded-full h-[250px] w-[250px] object-cover object-top md:h-[300px] md:w-[300px]"
             src={ProfileLogo}
             alt="My Profile Picture"
           />
         </div>
-        <div className="w-full self-center mb-10 md:w-1/2">
-          <h3 className="font-semibold text-slate-400 text-sm md:text-lg lg:text-2xl">
+        <div className="-my-32 w-full self-center mb-0 md:-my-0 md:w-1/2">
+          <h3 className="font-semibold text-slate-400 text-2xl mb-2 md:text-lg lg:text-2xl">
             Hello 👋, i'm
           </h3>
           <h1 className="text-sky-600 my-2 font-bold text-2xl md:text-3xl lg:text-4xl">
