@@ -1,24 +1,37 @@
 import React from "react";
-
+import "./App.css";
 import SkillCard from "./components/SkillCard";
 
 const Skills = ({ skillList }) => {
   return (
-    <div className="py-8 md:px-16">
+    <div className="py-8">
       <h1 className="pb-8 font-bold text-2xl text-center text-sky-600 md:text-4xl">
         Skills
       </h1>
-      <div className="flex flex-wrap justify-center items-center w-full gap-4">
-        {skillList.map((item, index) => (
-          <SkillCard
-            skillImg={item.skillImage}
-            skillTitle={item.skillTitle}
-            key={index}
-          />
-        ))}
+      <div className="py-2 w-full flex overflow-hidden logo relative">
+        <div className="flex flex-shrink-0 logos-slide">
+          {skillList.map((item, index) => (
+            <SkillCard
+              skillImg={item.skillImage}
+              skillTitle={item.skillTitle}
+              key={index}
+            />
+          ))}
+        </div>
+        <div className="flex flex-shrink-0 logos-slide">
+          {skillList.map((item, index) => (
+            <SkillCard
+              skillImg={item.skillImage}
+              skillTitle={item.skillTitle}
+              key={index}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Skills;
+
+// before:w-16 before:h-16 before:bg-red-500 after:w-16 after:h-16 after:bg-red-500
