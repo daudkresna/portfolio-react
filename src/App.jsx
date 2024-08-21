@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import NavBar from "./NavBar";
 import Hero from "./Hero";
@@ -14,6 +13,8 @@ import python from "./assets/skills/python.png";
 import nextjs from "./assets/skills/next-js.svg";
 import mysql from "./assets/skills/mysql.svg";
 import flutter from "./assets/skills/icon_flutter.png";
+import postgre from "./assets/skills/postgre.png";
+import typescript from "./assets/skills/typescript.png";
 
 function App() {
   const skillList = [
@@ -38,12 +39,20 @@ function App() {
       skillImage: reactImg,
     },
     {
+      skillTitle: "Typescript",
+      skillImage: typescript,
+    },
+    {
       skillTitle: "NextJS",
       skillImage: nextjs,
     },
     {
       skillTitle: "MySQL",
       skillImage: mysql,
+    },
+    {
+      skillTitle: "Postgre",
+      skillImage: postgre,
     },
     {
       skillTitle: "Flutter",

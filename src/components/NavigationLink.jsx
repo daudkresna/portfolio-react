@@ -19,7 +19,7 @@ const NavigationLink = ({ hamburgerOpen }) => {
   return (
     <nav
       id="nav-menu"
-      className={`${!hamburgerOpen ? "hidden" : null} md:block md:static md:bg-transparent md:max-w-full text-neutral-50 absolute max-w-[250px] w-full font-semibold right-4 top-full bg-neutral-900`}
+      className={`${!hamburgerOpen ? "scale-y-0" : "scale-y-100 "} ease-in-out duration-300 md:scale-y-100 origin-top  md:static md:block md:bg-transparent md:max-w-full text-neutral-50 absolute max-w-[250px] w-full font-semibold right-4 top-full bg-neutral-900`}
     >
       <ul className="block md:flex md:justify-end">
         {navigationList.map((item, index) => (

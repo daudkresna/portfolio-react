@@ -1,7 +1,10 @@
 import React from "react";
 import Profile from "./assets/profile-1.jpg";
+import Word from "./components/Word";
 
 const AboutMe = () => {
+  const paragraph =
+    "Lulusan Teknik Informatika yang didorong oleh rasa ingin tahu yang kuat untuk mendalami teknologi, Saat ini sedang mempelajari fullstack web development dengan berfokus pada Reactjs dan Nextjs. Belajar dengan cepat dan memiliki rasa ingin tahu yang tinggi.";
   return (
     <section
       id="about"
@@ -12,23 +15,7 @@ const AboutMe = () => {
       </h1>
       <div className="flex justify-center">
         <div className="mt-8">
-          <img
-            className="mr-4 max-w-full h-32 rounded-sm float-left md:h-40"
-            src={Profile}
-            alt=""
-          />
-          <p className="text-slate-300 md:text-2xl">
-            Teknik Informatika dengan IPK 3,68 yang didorong oleh rasa ingin
-            tahu yang kuat untuk mendalami teknologi, khususnya di bidang &nbsp;
-            <span className="text-sky-600 font-bold">
-              artificial intelligence
-            </span>
-            , <span className="text-sky-600 font-bold"> app development</span>,
-            dan
-            <span className="text-sky-600 font-bold"> computer network</span>.
-            Belajar dengan cepat dan mampu bekerja di bawah batasan waktu. Saat
-            ini mencari perusahaan untuk tumbuh dan berkembang bersama.
-          </p>
+          <Word paragraph={paragraph} />
           <div className="flex justify-center items-center mt-10">
             <a
               href="https://www.youtube.com/channel/UCHgAkIxG7vZtTIdc2dmbR-g"
