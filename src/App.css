@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0%);

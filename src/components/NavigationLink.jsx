@@ -11,6 +11,10 @@ const NavigationLink = ({ hamburgerOpen }) => {
       refLink: "#about",
     },
     {
+      title: "Portfolio",
+      refLink: "#portfolio",
+    },
+    {
       title: "Contact",
       refLink: "#contact",
     },

@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="bg-neutral-900 flex py-4 px-8 w-full z-40 relative">
+    <header className="bg-neutral-900 flex py-4 px-8 w-full z-40 sticky top-0">
       <div className="text-neutral-50 font-bold font-sans">
         <h1 className="font-sans text-2xl">
           Na.<span className="text-sky-600">Dev</span>
