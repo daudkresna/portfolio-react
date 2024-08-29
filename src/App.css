@@ -2,13 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes slide {
+@keyframes slide-left {
   from {
     transform: translateX(0%);
   }
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }
 
@@ -32,8 +42,12 @@ html {
   right: 0;
 }
 
-.logos-slide {
-  animation: 10s slide infinite linear;
+.logos-slide-left {
+  animation: 10s slide-left infinite linear;
+}
+
+.logos-slide-right {
+  animation: 15s slide-right infinite linear;
 }
 
 .logo:hover .logos-slide {

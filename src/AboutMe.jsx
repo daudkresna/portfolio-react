@@ -1,5 +1,4 @@
 import React from "react";
-import Profile from "./assets/profile-1.jpg";
 import Word from "./components/Word";
 
 const AboutMe = () => {

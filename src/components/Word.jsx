@@ -12,7 +12,7 @@ const Word = ({ paragraph }) => {
     <motion.p
       ref={ref}
       style={{ opacity: scrollYProgress }}
-      className="text-slate-300 md:text-2xl flex flex-wrap "
+      className="text-slate-300 text-xl font-bold md:text-2xl flex flex-wrap "
     >
       {words.map((word, i) => {
         const start = i / words.length;

@@ -9,7 +9,7 @@ const Skills = ({ skillList }) => {
         Skills
       </h1>
       <div className="py-2 w-full flex overflow-hidden logo relative">
-        <div className="flex flex-shrink-0 logos-slide">
+        <div className="flex flex-shrink-0 logos-slide-left">
           {skillList.map((item, index) => (
             <SkillCard
               skillImg={item.skillImage}
@@ -18,7 +18,29 @@ const Skills = ({ skillList }) => {
             />
           ))}
         </div>
-        <div className="flex flex-shrink-0 logos-slide">
+        <div className="flex flex-shrink-0 logos-slide-left">
+          {skillList.map((item, index) => (
+            <SkillCard
+              skillImg={item.skillImage}
+              skillTitle={item.skillTitle}
+              key={index}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* RIGHT */}
+      <div className="py-2 w-full flex flex-row-reverse overflow-hidden logo relative">
+        <div className="flex flex-shrink-0 logos-slide-right">
+          {skillList.map((item, index) => (
+            <SkillCard
+              skillImg={item.skillImage}
+              skillTitle={item.skillTitle}
+              key={index}
+            />
+          ))}
+        </div>
+        <div className="flex flex-shrink-0 logos-slide-right">
           {skillList.map((item, index) => (
             <SkillCard
               skillImg={item.skillImage}
